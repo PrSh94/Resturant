@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+#search-input {
+    width: 60vw;
+}
+
+.banner{
+    width: 65vw;
+    height: 300px;
+    margin-top: 55px;
+    margin-left: 15%;
+}
+  
+.banner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.menu-item {
+    margin-bottom: 20px;
+  }
+
+  .menu-item .card {
+    width: 300px;
+    margin-right: 20px; /* Add margin between cards */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  .menu-item .card:last-child {
+    margin-right: 0; /* Remove margin from the last card in each row */
+  }
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    /* max-width: 100%;
+    max-height: fit-content; */
+  }
+
+  .card {
+    border: 1px solid #e8d8d8;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .text-muted {
+    color: #6c757d;
+  }
+
+
+
+
+
+
+/* Desktop View (1280x720 resolution) */
+@media (min-width: 1280px) {
+    /* Navbar */
+    .navbar .navbar-nav {
+      display: flex;
+    }
+    .navbar .form-inline {
+      display: flex !important;
+    }
+    .navbar .navbar-toggler {
+      display: none;
+    }
+    .navbar .collapse.show {
+      display: flex !important;
+    }
+  
+    /* Menu Display */
+    .menu-item .card {
+      width: 300px;
+    }
+  }
+  
+  /* Medium View (768x1024 resolution) */
+  @media (max-width: 1024px) {
+    /* Navbar */
+    .navbar .navbar-toggler {
+      display: inline-block;
+    }
+    .navbar .collapse {
+      display: none;
+    }
+    .navbar .collapse.show {
+      display: block;
+    }
+  
+   
+  }
+  
+  /* Mobile View (375x667 resolution) */
+  @media (max-width: 767px) {
+    /* Navbar */
+    .navbar .navbar-collapse {
+      display: none;
+    }
+    .navbar .collapse.show {
+      display: block;
+    }
+
+  }
+  
+
+
+/* @media (min-width: 576px) {
+   
+}
+
+@media (min-width: 992px) {
+    
+} */
